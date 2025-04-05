@@ -3,9 +3,10 @@ from typing import List, Tuple
 import fasttext
 from huggingface_hub import hf_hub_download
 import wikipediaapi
+from .cached_fasttext import get_fasttext_model
 
 # Load the model
-model = fasttext.load_model(hf_hub_download("kenhktsui/llm-data-textbook-quality-fasttext-classifer-v2", "model.bin"))
+model = get_fasttext_model()
 
 def clean_markdown_links(text: str, min_quality_score: float = 0.2) -> Tuple[str, float]:
     """

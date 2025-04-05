@@ -5,12 +5,15 @@ from opendeepsearch.ranking_models.infinity_rerank import InfinitySemanticSearch
 from opendeepsearch.ranking_models.jina_reranker import JinaReranker
 from opendeepsearch.ranking_models.local_jina_reranker import LocalJinaReranker
 from opendeepsearch.ranking_models.chunker import Chunker 
-
+import threading
+scraping_lock = threading.Lock()
 @dataclass
 class Source:
     link: str
     html: str = ""
     # Add other relevant fields here
+
+cached_scraper = None
 
 class SourceProcessor:
     def __init__(
@@ -20,12 +23,19 @@ class SourceProcessor:
         filter_content: bool = True,
         reranker: str = "infinity"
     ):
+        global cached_scraper, scraping_lock
         self.strategies = strategies
         self.filter_content = filter_content
-        self.scraper = WebScraper(
-            strategies=self.strategies, 
-            filter_content=self.filter_content
-        )
+        
+        with scraping_lock:
+            if cached_scraper is None:
+                self.scraper = WebScraper(
+                    strategies=self.strategies,
+                    filter_content=self.filter_content
+                )
+                cached_scraper = self.scraper
+            else:
+                self.scraper = cached_scraper
         self.top_results = top_results
         self.chunker = Chunker()
         

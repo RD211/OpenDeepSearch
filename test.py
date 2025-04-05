@@ -1,4 +1,5 @@
 import os
+from opendeepsearch.context_scraping.cached_fasttext import get_fasttext_model
 import multiprocessing
 import pandas as pd
 from opendeepsearch import OpenDeepSearchTool
@@ -8,6 +9,7 @@ from smolagents import LiteLLMModel, ToolCallingAgent
 from datasets import load_dataset
 from colorama import init, Fore, Style
 from evals.autograde_df import autograde_df
+from datasets import Dataset
 
 # Initialize colorama
 init(autoreset=True)
@@ -51,9 +53,17 @@ def process_prompt(example):
     """
     Use the global react agent to process each dataset example.
     """
-    global react_agent
+    react_agent = initialize_react_agent()
     print(Fore.YELLOW + f"[Worker] Processing prompt: {example['Prompt']}")
-    answer = react_agent.ask_sync(example['Prompt'], n_samples=4)
+    try:
+        answer = react_agent.ask_sync(example['Prompt'], n_samples=4)
+    except Exception as e:
+        print(Fore.RED + f"[Worker] MEGA ERROR MEGA processing prompt: {e}, retrying...")
+        try:
+            answer = react_agent.ask_sync(example['Prompt'], n_samples=4)
+        except Exception as e:
+            print(Fore.RED + f"[Worker] MEGA ERROR MEGA processing prompt: {e}")
+            answer = "Error occurred"
     print(Fore.GREEN + f"[Worker] Answer: {answer}")
     example["our_answer"] = answer
     return example
@@ -67,15 +77,23 @@ def main():
 
     sample_query = "What is the distance, in metres, between the Colosseum in Rome and the Rialto bridge in Venice"
     print(Fore.MAGENTA + f"Running sample query: {sample_query}")
-    sample_result = react_agent.ask_sync(sample_query, n_samples=4)
-    print(Fore.BLUE + f"Sample Query Result: {sample_result}\n")
+    # sample_result = react_agent.ask_sync(sample_query, n_samples=4)
+    # print(Fore.BLUE + f"Sample Query Result: {sample_result}\n")
 
     print(Fore.CYAN + "Loading dataset 'google/frames-benchmark'...")
     ds = load_dataset('google/frames-benchmark', split='test')
     ds = ds.shuffle(seed=42).train_test_split(test_size=0.9)['train']
 
-    print(Fore.CYAN + "Processing dataset with multiprocessing (shared agent via fork)...")
-    ds = ds.map(process_prompt, num_proc=4)
+    from concurrent.futures import ThreadPoolExecutor
+
+    print(Fore.CYAN + "Processing dataset with threadpool")
+
+    with ThreadPoolExecutor(max_workers=len(ds)) as executor:
+        # This will process the dataset in order using threads.
+        processed_results = list(executor.map(process_prompt, ds))
+
+    ds = Dataset.from_pandas(pd.DataFrame(processed_results))
+
 
     print(Fore.CYAN + "Saving results to 'results.csv'...")
     df = ds.to_pandas()
@@ -115,7 +133,7 @@ def main():
     print(f"C: {C_percentage}%")
 
     print(Fore.CYAN + "Grading completed and results saved!")
-    print(Fore.GREEN + "Final accuracy:", A_percentage+"%")
+    print(f"Final accuracy:{A_percentage}%")
     
 if __name__ == '__main__':
     # DO NOT set spawn — fork is default on Unix and needed here

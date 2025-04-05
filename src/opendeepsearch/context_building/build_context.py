@@ -60,7 +60,6 @@ def build_context(
     """
     try:
         # Build context from different components
-        print("Retrieved these results:", sources_result)
         organic_results = extract_information(sources_result.get('organic', []))
         top_stories = extract_top_stories(sources_result.get('topStories'))
         answer_box = extract_answer_box(

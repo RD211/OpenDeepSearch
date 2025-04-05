@@ -1,3 +1,5 @@
+from opendeepsearch.context_scraping.cached_fasttext import get_fasttext_model
+
 from typing import Optional, Dict, Any, Literal
 from opendeepsearch.serp_search.serp_search import create_search_api, SearchAPI
 from opendeepsearch.context_building.process_sources_pro import SourceProcessor
