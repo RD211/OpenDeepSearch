@@ -62,11 +62,11 @@ def process_prompt(example):
     react_agent = initialize_react_agent()
     print(Fore.YELLOW + f"[Worker] Processing prompt: {example['Prompt']}")
     try:
-        answer = react_agent.ask_sync(example['Prompt'], n_samples=4)
+        answer = react_agent.ask_sync(example['Prompt'], n_samples=8)
     except Exception as e:
         print(Fore.RED + f"[Worker] MEGA ERROR MEGA processing prompt: {e}, retrying...")
         try:
-            answer = react_agent.ask_sync(example['Prompt'], n_samples=4)
+            answer = react_agent.ask_sync(example['Prompt'], n_samples=8)
         except Exception as e:
             print(Fore.RED + f"[Worker] MEGA ERROR MEGA processing prompt: {e}")
             answer = "Error occurred"
@@ -88,8 +88,8 @@ def main():
 
     print(Fore.CYAN + "Loading dataset 'google/frames-benchmark'...")
     ds = load_dataset('google/frames-benchmark', split='test')
-    ds = ds.shuffle(seed=42).train_test_split(test_size=0.9)['train']
-
+    # ds = ds.shuffle(seed=42).train_test_split(test_size=0.9)['train']
+    ds = ds.shuffle(seed=42).select(range(89))  # Select first 100 samples for testing
     from concurrent.futures import ThreadPoolExecutor
 
     print(Fore.CYAN + "Processing dataset with threadpool")

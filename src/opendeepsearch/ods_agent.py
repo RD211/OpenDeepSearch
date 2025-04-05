@@ -153,7 +153,8 @@ class OpenDeepSearchAgent:
             model=self.model,
             messages=messages,
             temperature=self.temperature,
-            top_p=self.top_p
+            top_p=self.top_p,
+            num_retries=4,
         )
 
         return response.choices[0].message.content
