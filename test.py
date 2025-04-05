@@ -5,7 +5,7 @@ import pandas as pd
 from opendeepsearch import OpenDeepSearchTool
 from opendeepsearch.prompts import MAJORITY_VOTE_PROMPT, REACT_PROMPT
 from opendeepsearch.sc_agent import SelfConsistentAgent
-from smolagents import LiteLLMModel, ToolCallingAgent
+from smolagents import LiteLLMModel, ToolCallingAgent, CodeAgent
 from datasets import load_dataset
 from colorama import init, Fore, Style
 from evals.autograde_df import autograde_df
@@ -25,6 +25,7 @@ def initialize_react_agent():
         "fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct",
         temperature=0.7
     )
+
     search_agent = OpenDeepSearchTool(
         model_name="fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct", 
         reranker="local_jina"
@@ -36,6 +37,11 @@ def initialize_react_agent():
         prompt_templates=REACT_PROMPT # Using REACT_PROMPT as system prompt
     )
 
+    code_agent = CodeAgent(
+        tools=[search_agent],
+        model=model
+    )
+
     judge_agent = ToolCallingAgent(
         tools=[],
         model=model,
@@ -43,7 +49,7 @@ def initialize_react_agent():
     )
 
     sc_agent = SelfConsistentAgent(
-        tool_agent=react_agent,
+        tool_agent=code_agent,
         judge_agent=judge_agent,
     )
 
