@@ -3,6 +3,7 @@ from typing import List, Optional, Tuple
 from opendeepsearch.context_scraping.crawl4ai_scraper import WebScraper
 from opendeepsearch.ranking_models.infinity_rerank import InfinitySemanticSearcher
 from opendeepsearch.ranking_models.jina_reranker import JinaReranker
+from opendeepsearch.ranking_models.local_jina_reranker import LocalJinaReranker
 from opendeepsearch.ranking_models.chunker import Chunker 
 
 @dataclass
@@ -32,6 +33,9 @@ class SourceProcessor:
         if reranker.lower() == "jina":
             self.semantic_searcher = JinaReranker()
             print("Using Jina Reranker")
+        elif reranker.lower() == "local_jina":
+            self.semantic_searcher = LocalJinaReranker()
+            print("Using Local Jina Reranker")
         else:  # default to infinity
             self.semantic_searcher = InfinitySemanticSearcher()
             print("Using Infinity Reranker")

@@ -32,7 +32,8 @@ class OpenDeepSearchTool(Tool):
         self.searxng_api_key = searxng_api_key
 
     def forward(self, query: str):
-        answer = self.search_tool.ask_sync(query, max_sources=2, pro_mode=True)
+        print("Calling ask sync here")
+        answer = self.search_tool.ask_sync(query, max_sources=2, pro_mode=False)
         return answer
 
     def setup(self):
