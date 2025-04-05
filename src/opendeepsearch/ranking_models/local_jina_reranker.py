@@ -6,6 +6,7 @@ import os
 from .base_reranker import BaseSemanticSearcher
 from transformers import AutoModel
 
+global_model = AutoModel.from_pretrained("jinaai/jina-embeddings-v3", trust_remote_code=True).cuda()
 
 class LocalJinaReranker(BaseSemanticSearcher):
     """
@@ -13,7 +14,12 @@ class LocalJinaReranker(BaseSemanticSearcher):
     """
     
     def __init__(self, model: str = "jinaai/jina-embeddings-v3"):
-        self.model = AutoModel.from_pretrained(model, trust_remote_code=True).cuda()
+        global global_model
+        if not global_model:
+            self.model = AutoModel.from_pretrained(model, trust_remote_code=True).cuda()
+        else:
+            self.model = global_model
+
 
     def _get_embeddings(self, texts: List[str]) -> torch.Tensor:
         """
