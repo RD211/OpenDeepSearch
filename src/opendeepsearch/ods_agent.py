@@ -11,6 +11,7 @@ from opendeepsearch.prompts import SEARCH_SYSTEM_PROMPT
 import asyncio
 import nest_asyncio
 load_dotenv()
+import time
 
 class OpenDeepSearchAgent:
     def __init__(
@@ -149,13 +150,28 @@ class OpenDeepSearchAgent:
             {"role": "user", "content": f"Context:\n{context}\n\nQuestion: {query}"}
         ]
         # Get completion from LLM
-        response = completion(
-            model=self.model,
-            messages=messages,
-            temperature=self.temperature,
-            top_p=self.top_p,
-            num_retries=4,
-        )
+        def retry_completion():
+            return completion(
+                model=self.model,
+                messages=messages,
+                temperature=self.temperature,
+                top_p=self.top_p,
+                num_retries=4,
+            )
+        max_retries = 30
+        for attempt in range(max_retries):
+            try:
+                response = retry_completion()
+                break
+            except Exception as e:
+                print(f"Attempt {attempt + 1} failed: {e}")
+                time.sleep(min(30, 2 ** attempt))  # Exponential backoff
+                if attempt == max_retries - 1:
+                    print("Max retries reached. Exiting.")
+                    return "Error: Unable to generate a response."
+                else:
+                    print("Retrying...")
+                    continue
 
         return response.choices[0].message.content
 

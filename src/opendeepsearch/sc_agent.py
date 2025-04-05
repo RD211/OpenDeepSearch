@@ -12,6 +12,7 @@ import nest_asyncio
 from smolagents import ToolCallingAgent
 import threading
 writing_lock = threading.Lock()
+import time
 import gc
 load_dotenv()
 
@@ -50,15 +51,18 @@ Here are the answers:
 Now, please provide the most accurate and concise answer based on the answers provided.
 """
         print(message)
-        try:
-            result = self.judge_agent.run(message)
-        except Exception as e:
-            print(f"Judging failed: {e} retrying")
+
+        max_retries = 30
+        for attempt in range(max_retries):
             try:
                 result = self.judge_agent.run(message)
+                break
             except Exception as e:
-                print(f"Judging failed again: {e} returning empty string")
-                result = ""
+                print(f"Attempt {attempt + 1} failed: {e}")
+                time.sleep(min(30, 2 ** attempt))
+                if attempt == max_retries - 1:
+                    print("Max retries reached, returning empty string")
+                    return ""
         
         # Write to final_results.txt
         with writing_lock:
