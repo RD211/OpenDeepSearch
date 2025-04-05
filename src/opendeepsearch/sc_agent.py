@@ -10,6 +10,8 @@ from smolagents import ToolCallingAgent
 import asyncio
 import nest_asyncio
 from smolagents import ToolCallingAgent
+import threading
+writing_lock = threading.Lock()
 import gc
 load_dotenv()
 
@@ -45,7 +47,7 @@ Here is the question:
 Here are the answers:
 {results}
 
-Now, please provide the most accurate and concise answer based on the answers provided.        
+Now, please provide the most accurate and concise answer based on the answers provided.
 """
         print(message)
         try:
@@ -58,6 +60,13 @@ Now, please provide the most accurate and concise answer based on the answers pr
                 print(f"Judging failed again: {e} returning empty string")
                 result = ""
         
+        # Write to final_results.txt
+        with writing_lock:
+            with open("final_results.txt", "a") as f:
+                f.write(f"Query: {query}\n")
+                f.write(f"Answers: {results}\n")
+                f.write(f"Final Result: {result}\n\n")
+                f.write("-" * 50 + "\n")
         gc.collect()
         return result
 

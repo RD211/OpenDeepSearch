@@ -89,7 +89,7 @@ def main():
     print(Fore.CYAN + "Loading dataset 'google/frames-benchmark'...")
     ds = load_dataset('google/frames-benchmark', split='test')
     # ds = ds.shuffle(seed=42).train_test_split(test_size=0.9)['train']
-    ds = ds.shuffle(seed=42).select(range(89))  # Select first 100 samples for testing
+    ds = ds.shuffle(seed=43).select(range(89))  # Select first 100 samples for testing
     from concurrent.futures import ThreadPoolExecutor
 
     print(Fore.CYAN + "Processing dataset with threadpool")
