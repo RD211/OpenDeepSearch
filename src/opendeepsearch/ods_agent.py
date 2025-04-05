@@ -166,7 +166,6 @@ class OpenDeepSearchAgent:
         Synchronous version of ask() method.
         """
 
-        print("Entered ask sync")
         try:
             # Try getting the current event loop
             loop = asyncio.get_event_loop()

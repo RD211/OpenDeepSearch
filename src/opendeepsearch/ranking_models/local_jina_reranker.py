@@ -7,7 +7,7 @@ from .base_reranker import BaseSemanticSearcher
 from transformers import AutoModel
 
 global_model = AutoModel.from_pretrained("jinaai/jina-embeddings-v3", trust_remote_code=True).cuda()
-
+global_model.eval()
 class LocalJinaReranker(BaseSemanticSearcher):
     """
     Semantic searcher implementation using Jina AI's embedding API.
@@ -31,8 +31,8 @@ class LocalJinaReranker(BaseSemanticSearcher):
         Returns:
             torch.Tensor containing the embeddings
         """
-
-        embeddings = torch.tensor(self.model.encode(texts, task='retrieval.query'))
+        with torch.no_grad():
+            embeddings = torch.tensor(self.model.encode(texts, task='retrieval.query'))
         return embeddings
         # data = {
         #     "model": self.model,

@@ -1,5 +1,12 @@
 from smolagents import PromptTemplates
 
+
+MAJORITY_VOTE_PROMPT = PromptTemplates(system_prompt="""
+You are an AI assistant that takes in a list of answers to a question and provides the most accurate and concise answer based on all the answers.
+
+You should provide the most common answer found in the list of answers. If there are multiple answers with the same frequency, you should provide the one that sounds the most reasonable and accurate.
+""")
+
 SEARCH_SYSTEM_PROMPT = """
 You are an AI-powered search agent that takes in a user’s search query, retrieves relevant search results, and provides an accurate and concise answer based on the provided context.
 

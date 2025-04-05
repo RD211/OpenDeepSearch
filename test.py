@@ -2,7 +2,8 @@ import os
 import multiprocessing
 import pandas as pd
 from opendeepsearch import OpenDeepSearchTool
-from opendeepsearch.prompts import REACT_PROMPT
+from opendeepsearch.prompts import MAJORITY_VOTE_PROMPT, REACT_PROMPT
+from opendeepsearch.sc_agent import SelfConsistentAgent
 from smolagents import LiteLLMModel, ToolCallingAgent
 from datasets import load_dataset
 from colorama import init, Fore, Style
@@ -26,12 +27,25 @@ def initialize_react_agent():
         model_name="fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct", 
         reranker="local_jina"
     )
-    react_agent_instance = ToolCallingAgent(
+    
+    react_agent = ToolCallingAgent(
         tools=[search_agent],
         model=model,
-        prompt_templates=REACT_PROMPT
+        prompt_templates=REACT_PROMPT # Using REACT_PROMPT as system prompt
     )
-    return react_agent_instance
+
+    judge_agent = ToolCallingAgent(
+        tools=[],
+        model=model,
+        prompt_templates=MAJORITY_VOTE_PROMPT
+    )
+
+    sc_agent = SelfConsistentAgent(
+        tool_agent=react_agent,
+        judge_agent=judge_agent,
+    )
+
+    return sc_agent
 
 def process_prompt(example):
     """
@@ -39,7 +53,7 @@ def process_prompt(example):
     """
     global react_agent
     print(Fore.YELLOW + f"[Worker] Processing prompt: {example['Prompt']}")
-    answer = react_agent.run(example['Prompt'])
+    answer = react_agent.ask_sync(example['Prompt'], n_samples=4)
     print(Fore.GREEN + f"[Worker] Answer: {answer}")
     example["our_answer"] = answer
     return example
@@ -53,15 +67,15 @@ def main():
 
     sample_query = "What is the distance, in metres, between the Colosseum in Rome and the Rialto bridge in Venice"
     print(Fore.MAGENTA + f"Running sample query: {sample_query}")
-    sample_result = react_agent.run(sample_query)
+    sample_result = react_agent.ask_sync(sample_query, n_samples=4)
     print(Fore.BLUE + f"Sample Query Result: {sample_result}\n")
 
     print(Fore.CYAN + "Loading dataset 'google/frames-benchmark'...")
     ds = load_dataset('google/frames-benchmark', split='test')
-    ds = ds.train_test_split(test_size=0.9)['train']
+    ds = ds.shuffle(seed=42).train_test_split(test_size=0.9)['train']
 
     print(Fore.CYAN + "Processing dataset with multiprocessing (shared agent via fork)...")
-    ds = ds.map(process_prompt, num_proc=64)
+    ds = ds.map(process_prompt, num_proc=4)
 
     print(Fore.CYAN + "Saving results to 'results.csv'...")
     df = ds.to_pandas()
