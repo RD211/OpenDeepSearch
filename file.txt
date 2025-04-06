@@ -1,0 +1,852 @@
+Loading model from Hugging Face Hub...
+Starting the script...
+Running sample query: What is the distance, in metres, between the Colosseum in Rome and the Rialto bridge in Venice
+Loading dataset 'google/frames-benchmark'...
+Processing dataset with threadpool
+[Worker] Processing prompt: What compass direction (of the 4 cardinal and 4 ordinal directions) is the capital city of the state which houses the Jackson Hole Mountain Resort in relation to the centre of the state?
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What compass direction (of the 4 cardinal and 4 ordinal directions) is the capital │
+│ city of the state which houses the Jackson Hole Mountain Resort in relation to the │
+│ centre of the state?                                                               │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Worker] Processing prompt: What is the difference between the fastest recorded swimming speed of a fish, and the fastest record for swimming the 50m freestyle in the 2020 Tokyo Olympics in meters per second?
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What is the difference between the fastest recorded swimming speed of a fish, and  │
+│ the fastest record for swimming the 50m freestyle in the 2020 Tokyo Olympics in    │
+│ meters per second?                                                                 │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Worker] Processing prompt: A Japanese aircraft carrier that was first built to become a luxury ocean liner was sunk by the U.S. torpedos in a battle four months prior to the Battle of Leyte Gulf in World War II. What is the name of the aircraft carrier and what battle did it sink in?
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ A Japanese aircraft carrier that was first built to become a luxury ocean liner    │
+│ was sunk by the U.S. torpedos in a battle four months prior to the Battle of Leyte │
+│ Gulf in World War II. What is the name of the aircraft carrier and what battle did │
+│ it sink in?                                                                        │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Worker] Processing prompt: In August of 2024, what is the first name of the mayor of the U.S. state capital city who attended the same university as at least one U.S. president and whose city is home to an outgoing or former full member of the Big 12 Conference
+[Worker] Processing prompt: Which university did the actor who has appeared in the most movies in the American pie film series (including spinoffs, as of 2020) deliver a commencement address at in 2012?╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ In August of 2024, what is the first name of the mayor of the U.S. state capital   │
+│ city who attended the same university as at least one U.S. president and whose     │
+│ city is home to an outgoing or former full member of the Big 12 Conference         │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+[Worker] Processing prompt: Which Northern Irish footballer who started in the 90s played for 9 English clubs, 8 of which were FA Cup winners?[Worker] Processing prompt: What Indian Empire was overrun by Huns 24 years after conventionally accepted date of the fall of the Western Roman Empire?[Worker] Processing prompt: Who was Prime Minister in Australia at the same time that Norman Gunston released "Salute to ABBA"?
+[Worker] Processing prompt: Out of all of Steven Spielberg's Oscar winning movies up until 2020, which one has made the most money?
+
+[Worker] Processing prompt: How many calories are in 7 oz. of the fruit given as a present in the musical that won Best Revival of a Musical at the 52nd Annual Tony Awards?
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Which university did the actor who has appeared in the most movies in the American │
+│ pie film series (including spinoffs, as of 2020) deliver a commencement address at │
+│ in 2012?                                                                           │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+[Worker] Processing prompt: What is the name of the home town of the top scorer for the 2018-19 Brisbane Roar Football Club?[Worker] Processing prompt: In 2020, the Italian curling team won the Moscow Classic annual bonspiel. One of the members of that four-person team was not born in Italy. As of August 1, 2024, what are the colors of the national flag of their country of origin?[Worker] Processing prompt: Which governor of Shizuoka resigned due to the delayed opening of the airport?╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Who was Prime Minister in Australia at the same time that Norman Gunston released  │
+│ "Salute to ABBA"?                                                                  │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+[Worker] Processing prompt: Who was the successor of the Egyptian Pharaoh that was in power when the Treasury of Atreus was completed?
+[Worker] Processing prompt: How long after Archduke Franz Ferdinand received Artstetten Castle did he have his first child?
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Which Northern Irish footballer who started in the 90s played for 9 English clubs, │
+│ 8 of which were FA Cup winners?                                                    │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What Indian Empire was overrun by Huns 24 years after conventionally accepted date │
+│ of the fall of the Western Roman Empire?                                           │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+
+
+[Worker] Processing prompt: What is greater: the combined 2011 populations of Rennington (Northumberland), Lydbrook (Gloucestershire), Stow-on-the-Wold (Gloucestershire) and Witney (Oxfordshire), or the 2022 population of London?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ How long after Archduke Franz Ferdinand received Artstetten Castle did he have his │
+│ first child?                                                                       │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+[Worker] Processing prompt: Name the teams in alphabetical order that every AL MVP from Texas Rangers retired from as of August 2024.
+[Worker] Processing prompt: What was the last prose book written by the poet who referred to Wyndham Lewis as "that lonely old volcano of the Right."?[Worker] Processing prompt: For how long was the "Father of the National Parks", the first president to declare a national park, and the president who declared the most national parks all alive at the same time?
+[Worker] Processing prompt: Which cities hosted the Olympics in 1988, and where were the opening ceremonies held in each city?╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ In 2020, the Italian curling team won the Moscow Classic annual bonspiel. One of   │
+│ the members of that four-person team was not born in Italy. As of August 1, 2024,  │
+│ what are the colors of the national flag of their country of origin?               │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+[Worker] Processing prompt: I'm thinking of a dam. Here are some clues:  -It had two official names in its history. -Construction was ordered to begin by the husband of the President of The Girl Scouts of the USA in 1936. ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Worker] Processing prompt: Which president of the United States is represented by the sum of the ordinal numbers of the presidencies of the four men depicted on Mount Rushmore?[Worker] Processing prompt: As of July 4th, 2024, what is the ratio of the number of years in the Early Dynastic Period of Egypt to the number of years since the United States declared independence? Round your answer to the nearest whole number. [Worker] Processing prompt: What German-born Author had books published in 1995, 1999, & 2005 detailing their studies and activism with what Tang's animal mascot of the time?[Worker] Processing prompt: As of the 2023 Major League Baseball season, who is the only player in the top 15 lists of career home runs, career runs batted in, and career hits, who was also named (in 2007) the all-time Gold Glove team?╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What is the name of the home town of the top scorer for the 2018-19 Brisbane Roar  │
+│ Football Club?                                                                     │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ For how long was the "Father of the National Parks", the first president to        │
+│ declare a national park, and the president who declared the most national parks    │
+│ all alive at the same time?                                                        │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Worker] Processing prompt: What is the name of the play written in May 2016 by a playwright who won the MacArthur Fellowship the same year as the poet who wrote "Postcolonial Love Poem"?
+[Worker] Processing prompt: What team scored the most points in an NBA finals game while Ronald Reagan was president of the United States of America?[Worker] Processing prompt: As of August 1, 2024, are there any cities in England that are more populated than Philadelphia, and which cities are they?[Worker] Processing prompt: In the region known as Sulawesi Selatan, which includes the Selayar Islands, what Austronesian language is predominantly spoken by the local population and how does the name "Sulawesi Selatan" relate to the location of the region?╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Who was the successor of the Egyptian Pharaoh that was in power when the Treasury  │
+│ of Atreus was completed?                                                           │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+[Worker] Processing prompt: How many years apart did a Kim Jong Un impersonator who was interviewed by USA today, and the man who founded Playboy attend the University of Illinois Urbana-Champaign?
+
+[Worker] Processing prompt: As of August 2024, which cast member fired from Saturday Night Live appeared on the show Hot Ones?
+[Worker] Processing prompt: What career was shared by one of the world's oldest fathers, who had a child at the age of 96, and a man who killed his wife, named Nancy, and their son, named Daniel?[Worker] Processing prompt: As of July 1, 2024, if I wanted to give my daughter the middle name of the American woman who is the most decorated female in the history of American gymnastics as her first name and the full first name of the American woman who holds the world record in the 800-meter freestyle as her middle name, what would I name my daughter? [Worker] Processing prompt: Which member of the Wu-Tang Clan was born on Staten Island?
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Which governor of Shizuoka resigned due to the delayed opening of the airport?     │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+[Worker] Processing prompt: A United States women's national soccer team player scored her first career international goal during the semi-final match of the 2015 FIFA Women's World Cup. This same player scored her second goal the next year. Tell me the difference in attendance between these two games.
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ I'm thinking of a dam. Here are some clues:  -It had two official names in its     │
+│ history. -Construction was ordered to begin by the husband of the President of The │
+│ Girl Scouts of the USA in 1936.                                                    │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+[Worker] Processing prompt: Of the top two most watched television season finales (as of June 2024), which finale ran the longest in length and by how much? [Worker] Processing prompt: What BTS member turned 5 years old the soonest after BoA's first album was released?[Worker] Processing prompt: What day of the year do John of Lancaster (Duke of Bedford), Fritz Koenig (German Sculptor), Edith Windsor (LGBT Activist), and Ulf Merbold (German Physicist and Astronaut) all have in common? 
+
+
+[Worker] Processing prompt: Where did Marion Couthouy Smith publish her books and poems between 1906 and 1918? Which years did each of these magazine companies first start?
+[Worker] Processing prompt: What was the first skyscraper built in this player's hometown before he became the 160th pick of the 1980's NFL Draft?[Worker] Processing prompt: During the year that Serbia became an independent republic after separation from Montenegro, who won the Nobel Prize for Literature?
+[Worker] Processing prompt: The person who posted a photo with Rahul Ligma and Daniel Johnson at the headquarters of a social media company claims to have a certain syndrome, despite never receiving a formal diagnosis. Who was this syndrome named after?
+
+[Worker] Processing prompt: What is the country of origin of the football coach with the first initial "P" for the Thailand national men's football team who coached 54 years after the country's name officially changed?[Worker] Processing prompt: In which year did the 4th Sheriff of Yorkshire to be part of the House of Plantagenet die?[Worker] Processing prompt: How many years after the founding of the 50th most populous US city, based on 2023 estimate population data, did Frank Fox receive UK Patent (1344259)?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Worker] Processing prompt: This 90s rock musical depiction of La bohème, had this music, lyrics and story written by a talent who passed the day before their Off-Broadway preview performance. Aside from Broadway, what was the name of his Netflix success? ╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Name the teams in alphabetical order that every AL MVP from Texas Rangers retired  │
+│ from as of August 2024.                                                            │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+[Worker] Processing prompt: As of August 1, 2024, which NFL players were both league MVP and Super Bowl MVP in the same season?
+
+[Worker] Processing prompt: What is the name of the vocalist from the first band to make it in the top 200 under the record label that produced the third studio album for Dismal Euphony?[Worker] Processing prompt: Ysaires Restituyo was a volleyball player known for playing in the NORCECA Beach Volleyball Circuit. How much older was her partner in 2007 than her partner in 2009?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Worker] Processing prompt: What was the name of the work written by Louis Pierre Vieillot published two years after he described the great blue turao as Musophaga cristata?[Worker] Processing prompt: Cut It by O.T Genasis was released in 2015. What is the name of the streaming service that exclusively hosted the music video of the song that ranked one position above "Cut It" on the US Billboard Hot 100 of 2016?[Worker] Processing prompt: Of the 6 main cast members of the series Friends, which have appeared in music videos?╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Out of all of Steven Spielberg's Oscar winning movies up until 2020, which one has │
+│ made the most money?                                                               │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+[Worker] Processing prompt: What were the top 5 Billboard songs by musical groups in the year 1985?[Worker] Processing prompt: Who won the World series the year Happy Days premiered?[Worker] Processing prompt: Out of all of the sovereign states with U.N. membership as of January 1, 2024, that recognize Abkhazia as a sovereign state, how many of them have active volcanoes?[Worker] Processing prompt: I'm trying to show my daughter some of the movies I grew up with. There's one a really want to show her but I can't remember the name of it. I remember that the male lead also played Fred in a live action Scooby Doo movie and the main girl was in this crazy anti-drug commercial in the 90s where she used a pan to destroy a bunch of things in a kitchen and said "This is your brain on drugs...". The movie is about a guy who makes a bet with his friend that he can turn an unpopular girl into prom queen. Can you tell me the name of the film?╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Which cities hosted the Olympics in 1988, and where were the opening ceremonies    │
+│ held in each city?                                                                 │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+[Worker] Processing prompt: For the year 2020, what was the difference in total fertility rate (TFR) for East Timor and Japan?[Worker] Processing prompt: As of 1st August 2024, How much younger is the current youngest US House Representative than the American folk hero who died at the Alamo when they were elected to the US House of Representatives?
+
+[Worker] Processing prompt: Who was the team manager for Lee Jae-won's only football season as of January 1, 2024?
+[Worker] Processing prompt: When Taylor Swift first released her studio album "1989," how many studio albums had Katy Perry already released? [Worker] Processing prompt: The actor who played Oliver Quick in Saltburn appeared in a music video for an artist who opened for Taylor Swift during the Latin American leg of the Eras Tour. What is the name of this music video?[Worker] Processing prompt: As of August 3, 2024, what is the biggest religion in the country who has the best democracy in 2023, according to the democracy index?[Worker] Processing prompt: This Canadian mountain, located in Cypress Provincial Park, got its name because one didn't have to cross it to reach The Lions (formerly Ch'ich'iyúy Elxwíkn'). What is the name of this mountain?  
+[Worker] Processing prompt: I'm thinking of a painting. It was done by the same man who painted The Anti-Slavery Society Convention in the 1840's. The painting is about an election. Can you tell me the name of it?
+[Worker] Processing prompt: What year did the author of "The Conquest for Bread" write about "Mutual Aid"? Who was the author?[Worker] Processing prompt: Who was the Mayor of Quincy, Massachusetts when the Quincy Medical Center opened and who was the Mayor when it closed?
+[Worker] Processing prompt: Of all states within New England in the United States, which had a population between 400,000 and 800,000 in 1920?
+[Worker] Processing prompt: What was the difference in population in the most populous town in the Isère department from 1946 to 1975?
+[Worker] Processing prompt: Which jetliner first flown on June 12th, 1994 is also widely used, as of August 3, 2024, by an airline using the ICE system for entertainment on board?
+
+[Worker] Processing prompt: What is the birth date of the person picked right after Lee Vaughn in the 1997 NFL draft?
+[Worker] Processing prompt: What was the second starring role of the actress who won an Oscar for portraying union activist Cyrstal Lee Sutton?
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ How many years apart did a Kim Jong Un impersonator who was interviewed by USA     │
+│ today, and the man who founded Playboy attend the University of Illinois           │
+│ Urbana-Champaign?                                                                  │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+[Worker] Processing prompt: There is a statue, Avukana Buddha, that overlooks a reservoir in Sri Lanka. The reservoir was built by a king in 460 A.D. What is the name of the king's uncle who raised him?
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ As of the 2023 Major League Baseball season, who is the only player in the top 15  │
+│ lists of career home runs, career runs batted in, and career hits, who was also    │
+│ named (in 2007) the all-time Gold Glove team?                                      │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Worker] Processing prompt: In 2003, Audible entered an agreement of exclusivity with a major brand. Who founded that brand?╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ As of August 2024, which cast member fired from Saturday Night Live appeared on    │
+│ the show Hot Ones?                                                                 │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Worker] Processing prompt: The oldest extant football team in Italy plays in a stadium.   The stadium is named after a person.   Who was the emperor of China when that person was 5 years old?[Worker] Processing prompt: How many England caps were won by university rugby teammates Will Carling, Chris Oti, and Andy Mullins? Round your answer to the nearest ten.[Worker] Processing prompt: As of Aug 3, 2024, the artist who released the album "Father of Asahd" went to the same high school as an Olympic diver. How many Olympic teams did this diver participate on?[Worker] Processing prompt: As of August 3, 2024, excluding white, what colour features on the flag of the city that houses the racecourse where Danon The Kid made his racing debut?
+[Worker] Processing prompt: Concerning just the winners between 2019 and 2024, which Pulitzer Prize-winning author was born in Maryland?╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ As of July 1, 2024, if I wanted to give my daughter the middle name of the         │
+│ American woman who is the most decorated female in the history of American         │
+│ gymnastics as her first name and the full first name of the American woman who     │
+│ holds the world record in the 800-meter freestyle as her middle name, what would I │
+│ name my daughter?                                                                  │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+[Worker] Processing prompt: According to the 2011 census, what is total population of the cities of the birthplaces of author Clive Barker, Prince William, and Sir Malcolm Stanley Bradbury? Round to the nearest 100,000. ╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What is greater: the combined 2011 populations of Rennington (Northumberland),     │
+│ Lydbrook (Gloucestershire), Stow-on-the-Wold (Gloucestershire) and Witney          │
+│ (Oxfordshire), or the 2022 population of London?                                   │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+[Worker] Processing prompt: Who were the first two women who won the Nobel Prize, in any category, who were also mothers?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ A United States women's national soccer team player scored her first career        │
+│ international goal during the semi-final match of the 2015 FIFA Women's World Cup. │
+│ This same player scored her second goal the next year. Tell me the difference in   │
+│ attendance between these two games.                                                │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What is the name of the play written in May 2016 by a playwright who won the       │
+│ MacArthur Fellowship the same year as the poet who wrote "Postcolonial Love Poem"? │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+[Worker] Processing prompt: As of August 1, 2024, which player who scored more than 10 goals in the 2022 Argentine Premier League season also played for Elche in Spain?
+
+[Worker] Processing prompt: As of January 1, 2024, what was the warmest decade, since the 17th century, around the ocean that surrounds Litke Deep?╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What day of the year do John of Lancaster (Duke of Bedford), Fritz Koenig (German  │
+│ Sculptor), Edith Windsor (LGBT Activist), and Ulf Merbold (German Physicist and    │
+│ Astronaut) all have in common?                                                     │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+[Worker] Processing prompt: I am thinking of a province that has the smallest land area in it's particular country, but also has the the 10th largest population.  This country has 10 provinces.  This province joined the country in 1873.  What is the scientific name of the provincial flower?
+
+[Worker] Processing prompt: What is the name of the retired Swiss tennis player who made the 4th round of Wimbledon in 2002?[Worker] Processing prompt: What medal did the woman who tied for 19th in the 2011 Pan American Games women's individual bowling event win as part of a women's bowling doubles team in the 2017 World Games?
+
+[Worker] Processing prompt: Regarding the award that the man who created the initial sketch for the Eiffel Tower received, how many of the award models have hanging devices that are in the shape of a crown?
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What was the first skyscraper built in this player's hometown before he became the │
+│ 160th pick of the 1980's NFL Draft?                                                │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+[Worker] Processing prompt: Which political leader of the countries where the Potsdam agreement and the Wellington Convention were signed was older on the 1st of July 1905?
+
+
+[Worker] Processing prompt: Which other astronaut flew the same type of aircraft during the Korean War as the first man to step on the moon?[Worker] Processing prompt: Multiple the number of Tony's won by the guest host of SNL 12/6/1997 by the number of Oscar nominations received by the 2023 film directed by Greta Gerwig. Then divide this number by the number of Grammy's won by the band behind the 1979 album "Tusk".╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What is the country of origin of the football coach with the first initial "P" for │
+│ the Thailand national men's football team who coached 54 years after the country's │
+│ name officially changed?                                                           │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ In which year did the 4th Sheriff of Yorkshire to be part of the House of          │
+│ Plantagenet die?                                                                   │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+[Worker] Processing prompt: There is a speech-sound disorder, not caused by a structural abnormality, for which one symptom is rearranging sounds of a word. The term for the disorder was first defined in 1908 by a German neuroscientist with the first name Hugo. Why was the Nobel Peace Prize given to an American the same year Hugo died?
+
+
+
+
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Of the top two most watched television season finales (as of June 2024), which     │
+│ finale ran the longest in length and by how much?                                  │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What was the last prose book written by the poet who referred to Wyndham Lewis as  │
+│ "that lonely old volcano of the Right."?                                           │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ As of July 4th, 2024, what is the ratio of the number of years in the Early        │
+│ Dynastic Period of Egypt to the number of years since the United States declared   │
+│ independence? Round your answer to the nearest whole number.                       │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Ysaires Restituyo was a volleyball player known for playing in the NORCECA Beach   │
+│ Volleyball Circuit. How much older was her partner in 2007 than her partner in     │
+│ 2009?                                                                              │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ During the year that Serbia became an independent republic after separation from   │
+│ Montenegro, who won the Nobel Prize for Literature?                                │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ The person who posted a photo with Rahul Ligma and Daniel Johnson at the           │
+│ headquarters of a social media company claims to have a certain syndrome, despite  │
+│ never receiving a formal diagnosis. Who was this syndrome named after?             │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Which member of the Wu-Tang Clan was born on Staten Island?                        │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ How many years after the founding of the 50th most populous US city, based on 2023 │
+│ estimate population data, did Frank Fox receive UK Patent (1344259)?               │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Worker] Processing prompt: Renowned Abstract Expressionist painter Clyfford Still graduated from college in 1933. As of August 1, 2024, what other alumnus from that university was nominated for a Pulitzer Prize?╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Who were the first two women who won the Nobel Prize, in any category, who were    │
+│ also mothers?                                                                      │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+[Worker] Processing prompt: As of 1st January 2023, If I am 7 years younger than the eldest granddaughter of the female monarch with the longest reign in confirmed history was at the time of the monarch's death, how old am I?╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ The actor who played Oliver Quick in Saltburn appeared in a music video for an     │
+│ artist who opened for Taylor Swift during the Latin American leg of the Eras Tour. │
+│ What is the name of this music video?                                              │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ This 90s rock musical depiction of La bohème, had this music, lyrics and story     │
+│ written by a talent who passed the day before their Off-Broadway preview           │
+│ performance. Aside from Broadway, what was the name of his Netflix success?        │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What team scored the most points in an NBA finals game while Ronald Reagan was     │
+│ president of the United States of America?                                         │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What BTS member turned 5 years old the soonest after BoA's first album was         │
+│ released?                                                                          │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ In the region known as Sulawesi Selatan, which includes the Selayar Islands, what  │
+│ Austronesian language is predominantly spoken by the local population and how does │
+│ the name "Sulawesi Selatan" relate to the location of the region?                  │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+[Worker] Processing prompt: Who was the Super Bowl MVP's wife the year the building Rodney Gordon designed was sold to Capital and City Group?╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What is the name of the vocalist from the first band to make it in the top 200     │
+│ under the record label that produced the third studio album for Dismal Euphony?    │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+[Worker] Processing prompt: What Jeep model shares its name with the Secret Service codename for a 21st-century US president?[Worker] Processing prompt: The actor known for playing Kenny "Shammy" Shamberg in Magnum P.I. was born how days before the Apollo 11 moon landing?╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ How many calories are in 7 oz. of the fruit given as a present in the musical that │
+│ won Best Revival of a Musical at the 52nd Annual Tony Awards?                      │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Where did Marion Couthouy Smith publish her books and poems between 1906 and 1918? │
+│ Which years did each of these magazine companies first start?                      │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Cut It by O.T Genasis was released in 2015. What is the name of the streaming      │
+│ service that exclusively hosted the music video of the song that ranked one        │
+│ position above "Cut It" on the US Billboard Hot 100 of 2016?                       │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Of the 6 main cast members of the series Friends, which have appeared in music     │
+│ videos?                                                                            │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Who won the World series the year Happy Days premiered?                            │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What career was shared by one of the world's oldest fathers, who had a child at    │
+│ the age of 96, and a man who killed his wife, named Nancy, and their son, named    │
+│ Daniel?                                                                            │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ How many England caps were won by university rugby teammates Will Carling, Chris   │
+│ Oti, and Andy Mullins? Round your answer to the nearest ten.                       │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+
+
+[Worker] Processing prompt: How many months, rounded to the nearest whole number, did it take to construct the tallest building in the world as of January 1, 2024?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Who was the team manager for Lee Jae-won's only football season as of January 1,   │
+│ 2024?                                                                              │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ When Taylor Swift first released her studio album "1989," how many studio albums   │
+│ had Katy Perry already released?                                                   │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ As of August 1, 2024, are there any cities in England that are more populated than │
+│ Philadelphia, and which cities are they?                                           │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Which president of the United States is represented by the sum of the ordinal      │
+│ numbers of the presidencies of the four men depicted on Mount Rushmore?            │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+[Worker] Processing prompt: What year was the band leader of the group who originally performed the song sampled in Kayne West's song Power born?
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What is the name of the retired Swiss tennis player who made the 4th round of      │
+│ Wimbledon in 2002?                                                                 │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What was the name of the work written by Louis Pierre Vieillot published two years │
+│ after he described the great blue turao as Musophaga cristata?                     │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What was the second starring role of the actress who won an Oscar for portraying   │
+│ union activist Cyrstal Lee Sutton?                                                 │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+[Worker] Processing prompt: What Doctor Who episode aired on a date closest to the 441st launch of the Skylark rocket?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Which other astronaut flew the same type of aircraft during the Korean War as the  │
+│ first man to step on the moon?                                                     │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Concerning just the winners between 2019 and 2024, which Pulitzer Prize-winning    │
+│ author was born in Maryland?                                                       │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Who was the Mayor of Quincy, Massachusetts when the Quincy Medical Center opened   │
+│ and who was the Mayor when it closed?                                              │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Of all states within New England in the United States, which had a population      │
+│ between 400,000 and 800,000 in 1920?                                               │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Which jetliner first flown on June 12th, 1994 is also widely used, as of August 3, │
+│ 2024, by an airline using the ICE system for entertainment on board?               │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What German-born Author had books published in 1995, 1999, & 2005 detailing their  │
+│ studies and activism with what Tang's animal mascot of the time?                   │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Worker] Processing prompt: As of August 1 2024, what books has the author of the Harry Potter series written under an alias?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ In 2003, Audible entered an agreement of exclusivity with a major brand. Who       │
+│ founded that brand?                                                                │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ I'm trying to show my daughter some of the movies I grew up with. There's one a    │
+│ really want to show her but I can't remember the name of it. I remember that the   │
+│ male lead also played Fred in a live action Scooby Doo movie and the main girl was │
+│ in this crazy anti-drug commercial in the 90s where she used a pan to destroy a    │
+│ bunch of things in a kitchen and said "This is your brain on drugs...". The movie  │
+│ is about a guy who makes a bet with his friend that he can turn an unpopular girl  │
+│ into prom queen. Can you tell me the name of the film?                             │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ As of Aug 3, 2024, the artist who released the album "Father of Asahd" went to the │
+│ same high school as an Olympic diver. How many Olympic teams did this diver        │
+│ participate on?                                                                    │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Multiple the number of Tony's won by the guest host of SNL 12/6/1997 by the number │
+│ of Oscar nominations received by the 2023 film directed by Greta Gerwig. Then      │
+│ divide this number by the number of Grammy's won by the band behind the 1979 album │
+│ "Tusk".                                                                            │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ As of August 1, 2024, which NFL players were both league MVP and Super Bowl MVP in │
+│ the same season?                                                                   │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Who was the Super Bowl MVP's wife the year the building Rodney Gordon designed was │
+│ sold to Capital and City Group?                                                    │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Regarding the award that the man who created the initial sketch for the Eiffel     │
+│ Tower received, how many of the award models have hanging devices that are in the  │
+│ shape of a crown?                                                                  │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ As of August 3, 2024, excluding white, what colour features on the flag of the     │
+│ city that houses the racecourse where Danon The Kid made his racing debut?         │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Renowned Abstract Expressionist painter Clyfford Still graduated from college in   │
+│ 1933. As of August 1, 2024, what other alumnus from that university was nominated  │
+│ for a Pulitzer Prize?                                                              │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ As of August 3, 2024, what is the biggest religion in the country who has the best │
+│ democracy in 2023, according to the democracy index?                               │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ I'm thinking of a painting. It was done by the same man who painted The            │
+│ Anti-Slavery Society Convention in the 1840's. The painting is about an election.  │
+│ Can you tell me the name of it?                                                    │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What year did the author of "The Conquest for Bread" write about "Mutual Aid"? Who │
+│ was the author?                                                                    │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ As of January 1, 2024, what was the warmest decade, since the 17th century, around │
+│ the ocean that surrounds Litke Deep?                                               │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ I am thinking of a province that has the smallest land area in it's particular     │
+│ country, but also has the the 10th largest population.  This country has 10        │
+│ provinces.  This province joined the country in 1873.  What is the scientific name │
+│ of the provincial flower?                                                          │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What was the difference in population in the most populous town in the Isère       │
+│ department from 1946 to 1975?                                                      │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What year was the band leader of the group who originally performed the song       │
+│ sampled in Kayne West's song Power born?                                           │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What is the birth date of the person picked right after Lee Vaughn in the 1997 NFL │
+│ draft?                                                                             │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Out of all of the sovereign states with U.N. membership as of January 1, 2024,     │
+│ that recognize Abkhazia as a sovereign state, how many of them have active         │
+│ volcanoes?                                                                         │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Worker] Processing prompt: What was the age difference, in years, between the seventh former President of Murray State University and the comic book artist who worked on *Superman & Bugs Bunny* and *New Guardians* when the comic book artist graduated from college?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ As of 1st August 2024, How much younger is the current youngest US House           │
+│ Representative than the American folk hero who died at the Alamo when they were    │
+│ elected to the US House of Representatives?                                        │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ As of 1st January 2023, If I am 7 years younger than the eldest granddaughter of   │
+│ the female monarch with the longest reign in confirmed history was at the time of  │
+│ the monarch's death, how old am I?                                                 │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ This Canadian mountain, located in Cypress Provincial Park, got its name because   │
+│ one didn't have to cross it to reach The Lions (formerly Ch'ich'iyúy Elxwíkn').    │
+│ What is the name of this mountain?                                                 │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What medal did the woman who tied for 19th in the 2011 Pan American Games women's  │
+│ individual bowling event win as part of a women's bowling doubles team in the 2017 │
+│ World Games?                                                                       │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ As of August 1 2024, what books has the author of the Harry Potter series written  │
+│ under an alias?                                                                    │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What were the top 5 Billboard songs by musical groups in the year 1985?            │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ For the year 2020, what was the difference in total fertility rate (TFR) for East  │
+│ Timor and Japan?                                                                   │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ There is a speech-sound disorder, not caused by a structural abnormality, for      │
+│ which one symptom is rearranging sounds of a word. The term for the disorder was   │
+│ first defined in 1908 by a German neuroscientist with the first name Hugo. Why was │
+│ the Nobel Peace Prize given to an American the same year Hugo died?                │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ The actor known for playing Kenny "Shammy" Shamberg in Magnum P.I. was born how    │
+│ days before the Apollo 11 moon landing?                                            │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What Doctor Who episode aired on a date closest to the 441st launch of the Skylark │
+│ rocket?                                                                            │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ According to the 2011 census, what is total population of the cities of the        │
+│ birthplaces of author Clive Barker, Prince William, and Sir Malcolm Stanley        │
+│ Bradbury? Round to the nearest 100,000.                                            │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ As of August 1, 2024, which player who scored more than 10 goals in the 2022       │
+│ Argentine Premier League season also played for Elche in Spain?                    │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What Jeep model shares its name with the Secret Service codename for a             │
+│ 21st-century US president?                                                         │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ How many months, rounded to the nearest whole number, did it take to construct the │
+│ tallest building in the world as of January 1, 2024?                               │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ There is a statue, Avukana Buddha, that overlooks a reservoir in Sri Lanka. The    │
+│ reservoir was built by a king in 460 A.D. What is the name of the king's uncle who │
+│ raised him?                                                                        │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ What was the age difference, in years, between the seventh former President of     │
+│ Murray State University and the comic book artist who worked on *Superman & Bugs   │
+│ Bunny* and *New Guardians* when the comic book artist graduated from college?      │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ Which political leader of the countries where the Potsdam agreement and the        │
+│ Wellington Convention were signed was older on the 1st of July 1905?               │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+╭───────────────────────────────────── New run ──────────────────────────────────────╮
+│                                                                                    │
+│ The oldest extant football team in Italy plays in a stadium.   The stadium is      │
+│ named after a person.   Who was the emperor of China when that person was 5 years  │
+│ old?                                                                               │
+│                                                                                    │
+╰─ LiteLLMModel - fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct ───────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

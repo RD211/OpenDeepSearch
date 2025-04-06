@@ -309,7 +309,7 @@ Observation: "Thomas Edison founded General Electric."
 
 Action:
 {
-  "name": "final_answer",
+  "name": "final_answer",4
   "arguments": {"answer": "Thomas Edison invented the light bulb and later established General Electric."}
 }
 
