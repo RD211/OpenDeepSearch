@@ -107,18 +107,26 @@ class OpenDeepSearchAgent:
             str: A formatted context string built from the processed search results.
         """
         # Get sources from SERP
-        sources = self.serp_search.get_sources(query)
+        
+        max_retries = 5
+        for attempt in range(max_retries):
+            sources = self.serp_search.get_sources(query)
 
-        # Process sources
-        processed_sources = await self.source_processor.process_sources(
-            sources,
-            max_sources,
-            query,
-            pro_mode
-        )
+            # Process sources
+            processed_sources = await self.source_processor.process_sources(
+                sources,
+                max_sources,
+                query,
+                pro_mode
+            )
 
-        # Build and return context
-        return build_context(processed_sources)
+            # Build and return context
+            res = build_context(processed_sources)
+        
+            if res:
+                return res
+
+        return ""
 
     async def ask(
         self,

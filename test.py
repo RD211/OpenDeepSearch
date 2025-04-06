@@ -22,12 +22,12 @@ def initialize_react_agent():
     Initialize and return a new instance of the react agent.
     """
     model = LiteLLMModel(
-        "fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct",
+        "fireworks_ai/accounts/fireworks/models/llama-v3p3-70b-instruct",
         temperature=0.7
     )
 
     search_agent = OpenDeepSearchTool(
-        model_name="fireworks_ai/accounts/fireworks/models/qwq-32b", 
+        model_name="fireworks_ai/accounts/fireworks/models/llama-v3p3-70b-instruct", 
         reranker="jina"
     )
     
@@ -89,12 +89,12 @@ def main():
     print(Fore.CYAN + "Loading dataset 'google/frames-benchmark'...")
     ds = load_dataset('google/frames-benchmark', split='test')
     # ds = ds.shuffle(seed=42).train_test_split(test_size=0.9)['train']
-    ds = ds.shuffle(seed=43).select(range(500, 600))#   # Select first 100 samples for testing
+    ds = ds.shuffle(seed=43).select(range(200, 250))#   # Select first 100 samples for testing
     from concurrent.futures import ThreadPoolExecutor
 
     print(Fore.CYAN + "Processing dataset with threadpool")
 
-    with ThreadPoolExecutor(max_workers=100) as executor:
+    with ThreadPoolExecutor(max_workers=50) as executor:
         # This will process the dataset in order using threads.
         processed_results = list(executor.map(process_prompt, ds))
 

@@ -21,7 +21,7 @@ class SelfConsistentAgent:
         self,
         tool_agent: ToolCallingAgent,
         judge_agent: ToolCallingAgent,
-        max_time_per_query: int = 60*30,
+        max_time_per_query: int = 60*45,
     ):
         # Initialize LLM settings
         self.tool_agent = tool_agent

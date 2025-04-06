@@ -22,7 +22,7 @@ class OpenDeepSearchTool(Tool):
         serper_api_key: Optional[str] = None,
         searxng_instance_url: Optional[str] = None,
         searxng_api_key: Optional[str] = None,
-        time_limit: int = 60 * 30,
+        time_limit: int = 60 * 45,
     ):
         super().__init__()
         self.start_time = time.time()

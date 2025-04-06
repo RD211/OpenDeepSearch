@@ -1,5 +1,245 @@
-Query: Which governor of Shizuoka resigned due to the delayed opening of the airport?
-Answers: ['Yoshinobu Ishikawa', 'Yoshinobu Ishikawa', 'Yoshinobu Ishikawa', 'Yoshinobu Ishikawa']
-Final Result: Yoshinobu Ishikawa
+Query: If Mr. Rogers were still alive, how old would he have been when the movie "A Beautiful Day in the Neighborhood", featuring Tom Hanks came out in the U.S.?
+Answers: ['91', '91', '91', '91']
+Final Result: 91
+
+--------------------------------------------------
+Query: What key signature was the song that was number one on the Billboard Hot 100 on June 8, 2002 performed in? 
+Answers: ['C Major', 'C Major', 'C Major', 'C Major']
+Final Result: C Major
+
+--------------------------------------------------
+Query: Who won the FIFA World Cup in the year the Falklands War broke out?
+Answers: ['Italy', 'Italy', 'Italy', 'Italy']
+Final Result: Italy
+
+--------------------------------------------------
+Query: How old was Katie Couric when Oprah Winfrey was 8 years old?
+Answers: ['5', '5', '5', '5']
+Final Result: 5
+
+--------------------------------------------------
+Query: Twenty-three years after the deadliest battle in the US Civil War, who served as governor in the state in which this battle was fought?
+Answers: ['James A. Beaver', 'James A. Beaver', 'James A. Beaver', 'James A. Beaver']
+Final Result: James A. Beaver
+
+--------------------------------------------------
+Query: I'm thinking of a diving duck, the largest found in North America, that breeds in the Prairie Pothole Region. This duck, smothered in blackcurrant sauce, was once described by Edith Wharton as an "especially luxurious dinner" which was served in New York City in the 1870s. Which duck am I thinking of?
+Answers: ['Canvasback', 'Canvasback', 'Canvasback', 'Canvasback']
+Final Result: Canvasback
+
+--------------------------------------------------
+Query: Which two MLB teams played in the World Series just weeks after the O.J. Simpson murder trial had ended?
+Answers: ['Atlanta Braves and the Cleveland Indians', 'Atlanta Braves and the Cleveland Indians', 'Atlanta Braves and the Cleveland Indians', 'Atlanta Braves and the Cleveland Indians']
+Final Result: Atlanta Braves and the Cleveland Indians
+
+--------------------------------------------------
+Query: What is the name of the Japanese man who protested the U.S.'s involvement in the Iraq War, and who has also been awarded multiple times the same award that "Shrek" won in 2002, beating "Jimmy Neutron: Boy Genius"?
+Answers: ['Hayao Miyazaki', 'Hayao Miyazaki', 'Hayao Miyazaki', 'Hayao Miyazaki']
+Final Result: Hayao Miyazaki
+
+--------------------------------------------------
+Query: This author won the Popular Fiction Book of the Year award in 2009 at the Irish Book Awards. What is their astrological sign?
+Answers: ['Virgo', 'Virgo', 'Virgo', 'Virgo']
+Final Result: Virgo
+
+--------------------------------------------------
+Query: Who was team captain of the team that won the Stanley Cup the year Connor McDavid was born?
+Answers: ['Steve Yzerman', 'Steve Yzerman', 'Steve Yzerman', 'Steve Yzerman']
+Final Result: Steve Yzerman
+
+--------------------------------------------------
+Query: Azamat Satybaldy's appearance in the film Road to Mother occurred in the same year as the Trace Gas Orbiter's launch from what location?
+Answers: ['Baikonur Cosmodrome in Kazakhstan', 'Baikonur Cosmodrome in Kazakhstan', 'Baikonur Cosmodrome in Kazakhstan', 'Baikonur Cosmodrome in Kazakhstan']
+Final Result: Baikonur Cosmodrome in Kazakhstan
+
+--------------------------------------------------
+Query: What two cities hosted the Summer Olympic Games between when the television shows featuring characters Olivia Benson and Meredith Grey started airing?
+Answers: ['Sydney and Athens', 'Sydney and Athens', 'Sydney and Athens', "['Sydney', 'Athens']", "['Athens, Greece', 'Beijing, China']", 'Sydney and Athens']
+Final Result: Sydney and Athens
+
+--------------------------------------------------
+Query: Gifts to children from Krampus are principally composed of what element?
+Answers: ['carbon', 'Carbon', 'carbon', 'Carbon', 'Carbon', 'Carbon']
+Final Result: carbon
+
+--------------------------------------------------
+Query: Who manufactured the kits Tomáš Pekhart wore in 2008 in his senior career?
+Answers: ['Umbro', 'Umbro', 'Umbro', 'Puma', 'Puma and Umbro', 'Umbro']
+Final Result: Umbro
+
+--------------------------------------------------
+Query: What was state of the schools regarding integration in the hometown of Miller Williams when he began his master's degree in Zoology?
+Answers: ['Segregated', 'Segregated', 'Segregated', 'Segregated']
+Final Result: Segregated
+
+--------------------------------------------------
+Query: Which country did tennis' first Golden Slam winner represent when they achieved it?
+Answers: ['Germany', 'Germany', 'Germany', 'West Germany', 'West Germany', 'Germany']
+Final Result: Germany
+
+--------------------------------------------------
+Query: Who won the third-place playoff at the UEFA World Cup while Donald Trump was in office as the 45th President of the United States?
+Answers: ['England', 'England', 'Belgium', 'Belgium', 'England', 'Belgium', 'Belgium']
+Final Result: Belgium
+
+--------------------------------------------------
+Query: In physics, when speaking of classical mechanics, there is an infamous problem that involves taking the initial positions and velocities of three point masses that orbit each other and attempting to calculate their trajectories. There is no general closed-form solution for this infamous problem. French mathematicians in the 18th century focused on solving this problem in regards to astronomical motion, specifically how the Moon rotates on its apsides. Their work led to a solution using Newton's laws of physics and the Discrete Fourier Transformation (DFT), which ultimately changed how sailors were able to determine longitude at sea. The inventor of the device that would revolutionize naval navigation using these new principles and proofs spent how many years testing and perfecting his work?
+Answers: ['26', '26', '26', '43', '25', '26']
+Final Result: 26
+
+--------------------------------------------------
+Query: Which original Saturday Night Live cast member's daughter, tied with Hannah Waddingham for the Best Supporting Actress in a Streaming Series, Comedy award at the 1st Hollywood Critics Association TV Awards in 2021?
+Answers: ['Laraine Newman', 'Hannah Einbinder', 'Hannah Einbinder', 'Hannah Einbinder', 'Hannah Einbinder']
+Final Result: Hannah Einbinder
+
+--------------------------------------------------
+Query: How old was the Miss Miss Venezuela 1970 winner on the day the 68th Academy Awards was held?
+Answers: ['46', '46', '46', '46']
+Final Result: 46
+
+--------------------------------------------------
+Query: What is the the sum of the ages of the men who were executed by firing squad in Kilmainham Gaol, on the 12th of May, during the same year as the Battle of the Somme, when the died?
+Answers: ['80', '80', '80', '80']
+Final Result: 80
+
+--------------------------------------------------
+Query: As of January 1st, 2024, how many buildings in New York City were 750ft or taller the last time Halley's Comet came close to Earth?
+Answers: ['1', '0', '0', '0', '1', '3', '0']
+Final Result: 0
+
+--------------------------------------------------
+Query: Who was elected the United States President in the same year that a ship, which was named after the snake that some argue killed Cleopatra, wrecked after the United Kingdom captured it from France?
+Answers: ['Andrew Jackson', 'Andrew Jackson', 'Andrew Jackson', 'Andrew Jackson']
+Final Result: Andrew Jackson
+
+--------------------------------------------------
+Query: What was the Enhanced Fujita Scale rating of the 2011 tornado that hit the hometown of the band who had a controversial interview with Bryan Odell on June 3, 2012?  
+Answers: ['EF5', 'EF5', 'EF5', 'EF5']
+Final Result: EF5
+
+--------------------------------------------------
+Query: Which football player got 15 or more assists in La Liga during the 2010-2011 season and also played for Arsenal at one point in his career?
+Answers: ['Mesut Özil', 'Mesut Özil', 'Mesut Özil', 'Mesut Özil']
+Final Result: Mesut Özil
+
+--------------------------------------------------
+Query: The University that Cillian Murphy attended was founded how many years before he began studying?
+Answers: ['151', '149', '151', '151', '151']
+Final Result: 151
+
+--------------------------------------------------
+Query: What is the birthplace and hometown of the winning goal scorer of the 2010 Vancouver Olympics, Men's Ice Hockey event?
+Answers: ['Halifax, Nova Scotia, Canada, and Cole Harbour, Nova Scotia, Canada', 'Halifax, Nova Scotia, Cole Harbour', 'Halifax, Nova Scotia, Cole Harbour', 'Halifax, Nova Scotia, Cole Harbour, Nova Scotia', 'Halifax, Nova Scotia, Cole Harbour', 'Halifax, Nova Scotia, Canada, and Cole Harbour, Nova Scotia, Canada', 'Halifax, Nova Scotia, Canada, and Cole Harbour, Nova Scotia, Canada', 'Halifax, Nova Scotia, Canada, and Cole Harbour, Nova Scotia, Canada']
+Final Result: Halifax, Nova Scotia, Canada, and Cole Harbour, Nova Scotia, Canada
+
+--------------------------------------------------
+Query: How much did the film in which Jake Gyllenhaal played his second lead role gross in its initial run at the box office?
+Answers: ['$7.5 million', '517375', '517375', '517375', '$517,375', '$517,375', '$517,375', '$517,375']
+Final Result: $517,375
+
+--------------------------------------------------
+Query: How many of Hitler's three couriers of his last will and other political documents died after 1980?
+Answers: ['1', '1', '1', '1']
+Final Result: 1
+
+--------------------------------------------------
+Query: Joel Oshiro Dyck played professional ice hockey for three teams. Which of those teams were dissolved for financial difficulties after the 2018-2019 season?
+Answers: ['Nippon Paper Cranes', 'Lethbridge Golden Hawks U15 AAA and Nippon Paper Cranes', 'Nippon Paper Cranes', 'Lethbridge Golden Hawks U15 AAA and Nippon Paper Cranes', 'Nippon Paper Cranes', 'Nippon Paper Cranes']
+Final Result: Nippon Paper Cranes
+
+--------------------------------------------------
+Query: Of the counties that Wisconsin Highway 34 runs through, what is the seat of the most populous county based on 2020 census data? 
+Answers: ['Wausau', 'Wausau', 'Wausau', 'Wausau']
+Final Result: Wausau
+
+--------------------------------------------------
+Query: I'm a spooky tourist and I'm visiting Savannah, GA. I'm going to visit two of the most well-known cemeteries, what Cemetery in Savannah is famous for being in a book and on a book cover? What was the book? There is another old cemetery downtown I want to visit, I heard epidemic victims were buried there. What epidemic and what years did it take place? How many victims are buried there?
+Answers: ['Bonaventure Cemetery, Midnight in the Garden of Good and Evil, Colonial Park Cemetery, Yellow Fever, 1820, over 700 victims', "The cemetery in Savannah famous for being in a book and on a book cover is Bonaventure Cemetery, and the book is 'Midnight in the Garden of Good and Evil.' The other old cemetery downtown where epidemic victims were buried is Colonial Park Cemetery, and the epidemic was the 1820 Yellow Fever epidemic, with over 700 victims buried there.", 'Bonaventure Cemetery, Midnight in the Garden of Good and Evil, Colonial Park Cemetery, Yellow Fever, 1820, over 700', "The cemetery in Savannah that is famous for being in a book and on a book cover is Bonaventure Cemetery, and the book is 'Midnight in the Garden of Good and Evil'. The old cemetery downtown where epidemic victims were buried is Colonial Park Cemetery, and the epidemic was the 1820 Yellow Fever epidemic, which claimed the lives of over 700 victims.", 'Bonaventure Cemetery, Midnight in the Garden of Good and Evil, Colonial Park Cemetery, Yellow Fever, 1820, over 700', "The cemetery in Savannah famous for being in a book and on a book cover is Bonaventure Cemetery, and the book is 'Midnight in the Garden of Good and Evil' by John Berendt. The old cemetery downtown where epidemic victims were buried is Colonial Park Cemetery, and the epidemic was the Yellow Fever epidemic of 1820, with over 700 victims buried there.", "The cemetery in Savannah famous for being in a book and on a book cover is Bonaventure Cemetery, and the book is 'Midnight in the Garden of Good and Evil' by John Berendt. The other old cemetery downtown where epidemic victims were buried is Colonial Park Cemetery, and the epidemic was the 1820 Yellow Fever epidemic, with over 700 victims buried there.", 'Bonaventure Cemetery, Midnight in the Garden of Good and Evil, Colonial Park Cemetery, Yellow Fever epidemic, 1820, over 700', "The cemetery in Savannah that is famous for being in a book and on a book cover is Bonaventure Cemetery, and the book is 'Midnight in the Garden of Good and Evil'. The old cemetery downtown that has epidemic victims buried there is Colonial Park Cemetery, and it is the final resting place for many victims of the 1820 Yellow Fever epidemic, with over 700 victims buried there.", "The cemetery in Savannah that is famous for being in a book and on a book cover is Bonaventure Cemetery, and the book is 'Midnight in the Garden of Good and Evil'. The old cemetery downtown where epidemic victims were buried is Colonial Park Cemetery, and the epidemic that took place was the Yellow Fever epidemic, which occurred from 1693 to 1905. Nearly 700 victims of the 1820 Yellow Fever epidemic are buried in a mass grave at Colonial Park Cemetery.", 'Bonaventure Cemetery, Midnight in the Garden of Good and Evil, Colonial Park Cemetery, Yellow Fever epidemic, 1820, over 700 victims', "The cemetery in Savannah famous for being in a book and on a book cover is Bonaventure Cemetery, and the book is 'Midnight in the Garden of Good and Evil'. The old cemetery downtown where epidemic victims were buried is Colonial Park Cemetery, the epidemic was Yellow Fever, it took place in 1820, and there are over 700 victims buried there."]
+Final Result: Bonaventure Cemetery, Midnight in the Garden of Good and Evil, Colonial Park Cemetery, Yellow Fever, 1820, over 700 victims
+
+--------------------------------------------------
+Query: This singer represented Sweden in Eurovision four years before the Sweden Democrats entered Parliament for the first time. What astrological sign was the real person behind the character she played in her first musical?
+Answers: ['Aquarius', 'Virgo', 'Aquarius', 'Aquarius', 'Aquarius']
+Final Result: Aquarius
+
+--------------------------------------------------
+Query: Please consider the following clues and answer the question that follows:  1. This mosque is located in the city dubbed the "Jerusalem of the Balkans." 2, The mosque was commissioned by an authoritarian dictator born in a small village 10 km west of Yogyakarta.  Question: What is the height difference between the twin towers of the mosque and its dome? 
+Answers: ['21', '21', '21', '21']
+Final Result: 21
+
+--------------------------------------------------
+Query: How many player entries were in the event that the winner of the 2008 Aussie Millions also won in 2010 at the PokerStars World Championship of Online Poker?
+Answers: ['1612', '2443', '1612', 'Not found', '1612', '133', '1612']
+Final Result: 1612
+
+--------------------------------------------------
+Query: Archibald Sinclair had an American mom who was a half-sister. The half-sister had a life partner who had a painting of her by Walter Sickert. How many words is the title of that painting?
+Answers: ['4', '2', '5', '7', '4', '7', '4', '7', '4']
+Final Result: 4
+
+--------------------------------------------------
+Query: What is the difference between the number of years served in the seventh-ratified US state's House of Delegates between that state's senator elected in 2007 and his uncle?
+Answers: ['5', '5', '5', '5']
+Final Result: 5
+
+--------------------------------------------------
+Query: What city does the band whose song spent the most weeks at No. 1 on the Billboard Hot Rock & Alternative Songs chart as of August 1, 2024 originate from?
+Answers: ['Agoura Hills', 'Agoura Hills, California', 'Agoura Hills, California', 'Las Vegas', 'Oologah, Oklahoma', 'Agoura Hills, California', 'Agoura Hills, California']
+Final Result: Agoura Hills, California
+
+--------------------------------------------------
+Query: What drug did the male founder of the company that first cloned a U.S. endangered species help study with the International Foundation for Advanced Study?
+Answers: ['LSD', 'LSD', 'LSD', 'LSD']
+Final Result: LSD
+
+--------------------------------------------------
+Query: The National Peace Corps Association was founded in 1979 by a United States politician. This founder then appointed the very first director of the Peace Corps, his brother-in-law. What is the first name of this director?
+Answers: ['Sargent', 'R.', 'Sargent', 'Sargent', 'Sargent']
+Final Result: Sargent
+
+--------------------------------------------------
+Query: How much older was the songwriter of 'The Twist' when he wrote it than Chubby Checker was when he recorded the song?
+Answers: ['12', '13', '13', '12', '12', '13', '13']
+Final Result: 13
+
+--------------------------------------------------
+Query: From United States Former President Bill Clinton through Former President Donald Trump, which president in this time period has published the greatest number of books as of August 1, 2024? Please exclude from that count any books you find that are authored by someone else about a particular former president. 
+Answers: ['Bill Clinton', 'Donald Trump', 'Bill Clinton', 'Donald Trump', 'Donald Trump', 'Bill Clinton', 'Donald Trump']
+Final Result: Donald Trump
+
+--------------------------------------------------
+Query: What are the combined ages of the Guildford 4 at the time of their trial, divided by the number of the Birmingham 6 who were originally from the capital of Northern Ireland? Round it and provide the answer in binary.
+Answers: ['10000', '110111', '10001', '10000', '10010', '11011', '10000', '10000']
+Final Result: 10000
+
+--------------------------------------------------
+Query: Tell me the singer that I am thinking about. Use this information to determine who it is: The song hit #1 on the billboard in 2015. The singer is from Canada. The artist was born before the dissolution of Czechoslovakia.
+Answers: ['The Weeknd', 'The Weeknd', 'The Weeknd', 'The Weeknd']
+Final Result: The Weeknd
+
+--------------------------------------------------
+Query: Which U.S. National Park was the first to be established after the Portland Trail Blazers won their only playoff series with LaMarcus Aldridge on the team?
+Answers: ['Gateway Arch', 'New River Gorge', 'New River Gorge National Park', 'New River Gorge National Park and Preserve', 'Indiana Dunes National Park', 'New River Gorge National Park', 'Amache National Historic Site', 'New River Gorge National Park and Preserve', 'New River Gorge National Park', 'Amache National Historic Site', 'New River Gorge National Park']
+Final Result: New River Gorge National Park
+
+--------------------------------------------------
+Query: As of 1st November 2023, Which two South African drivers took part in the Formula One the year in which a micro-nation claimed territory off the coast of Suffolk, England? 
+Answers: ['John Love and Sam Tingle', 'Dave Charlton and John Love', 'John Love and Luki Botha', 'Luki Botha and John Love', 'Luki Botha and Dave Charlton', 'Dave Charlton and John Love', 'Luki Botha and Dave Charlton', 'Luki Botha', 'Luki Botha and John Love', 'Luki Botha and Jody Scheckter', 'Dave Charlton and Luki Botha', 'Dave Charlton and John Love']
+Final Result: Dave Charlton and John Love
+
+--------------------------------------------------
+Query: What medal was won in 1979 by the famous physicist who attended the oldest college in London?
+Answers: ['Dirac Medal', 'James Clerk Maxwell Medal and Prize', 'Albert Einstein Medal', 'Nobel Prize', 'Nobel Prize in Physics', 'Albert Einstein Medal', 'Thomas Young Medal', 'Nobel Prize', 'Albert Einstein Medal', 'Thomas Young Medal and Prize', 'Albert Einstein Medal']
+Final Result: Albert Einstein Medal
+
+--------------------------------------------------
+Query: If you divide the number of Papuan tribes in the Sarmi and Keerom Regencies of Papua province in Indonesia as of 2024 by the number of indigenous tribes in Brazil whose names, as they are typically written, begin with letters W, X, Y, or Z as of 2024, what is the answer to the fifth decimal place, rounding up?
+Answers: ['0.33334', '11.8', '2.0459', '3.33333', '7.57143', '312.0', '17.4', '10.22951', '0', '0.71429', '19.3125', '22.28571']
+Final Result: 3.33333
+
+--------------------------------------------------
+Query: During World War I, the French designed a new military decoration to recognize French and allied soldiers for their service. The sculptor who designed the medal also worked on two war monuments one year after WWI ended. What is the name of the monument that he began work on, but was completed by someone else?
+Answers: ['Douaumont Ossuary', 'Panthéon', 'Monument to the Dead', 'Monument aux Morts', 'Monument to the Dead', 'Christ the Redeemer', 'The Arc de Triomphe', 'Soissons War Memorial', 'The Tomb of the Unknown Soldier', 'The Arc de Triomphe', 'The Ossuary at Douaumont', 'The Monument to the Dead']
+Final Result: Douaumont Ossuary
 
 --------------------------------------------------
