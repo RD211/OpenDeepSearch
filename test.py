@@ -27,8 +27,8 @@ def initialize_react_agent():
     )
 
     search_agent = OpenDeepSearchTool(
-        model_name="fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct", 
-        reranker="local_jina"
+        model_name="fireworks_ai/accounts/fireworks/models/qwq-32b", 
+        reranker="jina"
     )
     
     react_agent = ToolCallingAgent(
@@ -62,11 +62,11 @@ def process_prompt(example):
     react_agent = initialize_react_agent()
     print(Fore.YELLOW + f"[Worker] Processing prompt: {example['Prompt']}")
     try:
-        answer = react_agent.ask_sync(example['Prompt'], n_samples=8)
+        answer = react_agent.ask_sync(example['Prompt'], n_samples=12)
     except Exception as e:
         print(Fore.RED + f"[Worker] MEGA ERROR MEGA processing prompt: {e}, retrying...")
         try:
-            answer = react_agent.ask_sync(example['Prompt'], n_samples=8)
+            answer = react_agent.ask_sync(example['Prompt'], n_samples=12)
         except Exception as e:
             print(Fore.RED + f"[Worker] MEGA ERROR MEGA processing prompt: {e}")
             answer = "Error occurred"
@@ -89,12 +89,12 @@ def main():
     print(Fore.CYAN + "Loading dataset 'google/frames-benchmark'...")
     ds = load_dataset('google/frames-benchmark', split='test')
     # ds = ds.shuffle(seed=42).train_test_split(test_size=0.9)['train']
-    ds = ds.shuffle(seed=43).select(range(89))  # Select first 100 samples for testing
+    ds = ds.shuffle(seed=43).select(range(100, 300))#   # Select first 100 samples for testing
     from concurrent.futures import ThreadPoolExecutor
 
     print(Fore.CYAN + "Processing dataset with threadpool")
 
-    with ThreadPoolExecutor(max_workers=len(ds)) as executor:
+    with ThreadPoolExecutor(max_workers=100) as executor:
         # This will process the dataset in order using threads.
         processed_results = list(executor.map(process_prompt, ds))
 
