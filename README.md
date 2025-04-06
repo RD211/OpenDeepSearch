@@ -95,3 +95,5 @@ Our evaluation script requires some manual handholding due to API timeouts. If y
 ```python
 ds = ds.shuffle(seed=43).select(range(0, 100))
 ```
+
+alternatively you can disable the timeouts we have introduced for our help in the `ods_tool.py` and `sc_agent.py` and thus run as normaly on the whole dataset.
