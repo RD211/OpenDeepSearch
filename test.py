@@ -3,69 +3,103 @@ from opendeepsearch.context_scraping.cached_fasttext import get_fasttext_model
 import multiprocessing
 import pandas as pd
 from opendeepsearch import OpenDeepSearchTool
-from opendeepsearch.prompts import MAJORITY_VOTE_PROMPT, REACT_PROMPT
+from opendeepsearch.prompts import MAJORITY_VOTE_PROMPT, REACT_PROMPT, SEARCH_SYSTEM_PROMPT
 from opendeepsearch.sc_agent import SelfConsistentAgent
-from smolagents import LiteLLMModel, ToolCallingAgent
+from opendeepsearch.agent_tool import AgentTool
+from smolagents import LiteLLMModel, ToolCallingAgent, CodeAgent
 from datasets import load_dataset
 from colorama import init, Fore, Style
 from evals.autograde_df import autograde_df
 from datasets import Dataset
 
 # Initialize colorama
-init(autoreset=True)
+init(strip=False, convert=True, autoreset=True)
 
 # Global agent (will be set once in main)
 react_agent = None
+
+name_qwb = "fireworks_ai/accounts/fireworks/models/qwq-32b"
+name_qwen = "fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct"
+name_base = name_qwen
 
 def initialize_react_agent():
     """
     Initialize and return a new instance of the react agent.
     """
+    # Base model
     model = LiteLLMModel(
-        "fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct",
+        name_base,
         temperature=0.7
     )
-    search_agent = OpenDeepSearchTool(
-        model_name="fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct", 
-        reranker="local_jina"
+
+    search_tool = OpenDeepSearchTool(
+        model_name=name_base,
+        reranker="local_jina",
     )
     
-    react_agent = ToolCallingAgent(
-        tools=[search_agent],
+    # react_agent = ToolCallingAgent(
+    #     tools=[search_agent],
+    #     model=model,
+    #     prompt_templates=REACT_PROMPT # Using REACT_PROMPT as system prompt
+    # )
+
+    # judge_agent = ToolCallingAgent(
+    #     tools=[],
+    #     model=model,
+    #     prompt_templates=MAJORITY_VOTE_PROMPT
+    # )
+
+    # sc_agent = SelfConsistentAgent(
+    #     tool_agent=react_agent,
+    #     judge_agent=judge_agent,
+    # )
+
+    # return sc_agent
+    # react_agent_instance = ToolCallingAgent(
+    #     tools=[search_agent],
+    #     model=model,
+    #     prompt_templates=REACT_PROMPT
+    # )
+
+    subtask_agent = CodeAgent(
+        tools=[search_tool],
         model=model,
-        prompt_templates=REACT_PROMPT # Using REACT_PROMPT as system prompt
     )
 
-    judge_agent = ToolCallingAgent(
-        tools=[],
+    subtask_agent_tool = AgentTool(subtask_agent)
+
+    # print(f"{subtask_agent_tool.name=}")
+    # print(f"{subtask_agent_tool.description=}")
+    # print()
+
+    main_agent_instance = ToolCallingAgent(
+        tools=[search_tool, subtask_agent_tool],
         model=model,
-        prompt_templates=MAJORITY_VOTE_PROMPT
+        prompt_templates=REACT_PROMPT,
     )
 
-    sc_agent = SelfConsistentAgent(
-        tool_agent=react_agent,
-        judge_agent=judge_agent,
-    )
-
-    return sc_agent
-
+    return main_agent_instance
+    
 def process_prompt(example):
     """
     Use the global react agent to process each dataset example.
     """
-    react_agent = initialize_react_agent()
+    # react_agent = initialize_react_agent()
+    # global react_agent
+    print("\n" * 3)
     print(Fore.YELLOW + f"[Worker] Processing prompt: {example['Prompt']}")
     try:
-        answer = react_agent.ask_sync(example['Prompt'], n_samples=4)
+        answer = react_agent.run(example['Prompt'])
     except Exception as e:
         print(Fore.RED + f"[Worker] MEGA ERROR MEGA processing prompt: {e}, retrying...")
         try:
-            answer = react_agent.ask_sync(example['Prompt'], n_samples=4)
+            answer = react_agent.run(example['Prompt'])
         except Exception as e:
             print(Fore.RED + f"[Worker] MEGA ERROR MEGA processing prompt: {e}")
             answer = "Error occurred"
     print(Fore.GREEN + f"[Worker] Answer: {answer}")
     example["our_answer"] = answer
+    print(f"[Worker] Ground truth: {example["Answer"]}")
     return example
 
 def main():
@@ -75,25 +109,31 @@ def main():
     # Initialize react agent once, shared via fork
     react_agent = initialize_react_agent()
 
-    sample_query = "What is the distance, in metres, between the Colosseum in Rome and the Rialto bridge in Venice"
-    print(Fore.MAGENTA + f"Running sample query: {sample_query}")
-    # sample_result = react_agent.ask_sync(sample_query, n_samples=4)
+    # sample_query = "What is the distance, in metres, between the Colosseum in Rome and the Rialto bridge in Venice"
+    # print(Fore.MAGENTA + f"Running sample query: {sample_query}")
+    # sample_result = react_agent.run(sample_query)
     # print(Fore.BLUE + f"Sample Query Result: {sample_result}\n")
 
     print(Fore.CYAN + "Loading dataset 'google/frames-benchmark'...")
     ds = load_dataset('google/frames-benchmark', split='test')
-    ds = ds.shuffle(seed=42).train_test_split(test_size=0.9)['train']
 
-    from concurrent.futures import ThreadPoolExecutor
+    # from concurrent.futures import ThreadPoolExecutor
 
-    print(Fore.CYAN + "Processing dataset with threadpool")
+    # print(Fore.CYAN + "Processing dataset with threadpool")
 
-    with ThreadPoolExecutor(max_workers=len(ds)) as executor:
-        # This will process the dataset in order using threads.
-        processed_results = list(executor.map(process_prompt, ds))
+    # with ThreadPoolExecutor(max_workers=len(ds)) as executor:
+    #     # This will process the dataset in order using threads.
+    #     processed_results = list(executor.map(process_prompt, ds))
 
-    ds = Dataset.from_pandas(pd.DataFrame(processed_results))
+    # ds = Dataset.from_pandas(pd.DataFrame(processed_results))
+    # ds = ds.shuffle(42).train_test_split(test_size=0.998)['train']
 
+    # ds = ds.select(range(1))
+    ds = ds.select([675])
+    print("Size of ds:", len(ds))
+
+    print(Fore.CYAN + "Processing dataset with multiprocessing (shared agent via fork)...")
+    ds = ds.map(process_prompt, num_proc=1)
 
     print(Fore.CYAN + "Saving results to 'results.csv'...")
     df = ds.to_pandas()
@@ -119,7 +159,6 @@ def main():
     df.to_json('eval.json', orient='records', lines=True)
 
     autograde_df('eval.json')
-
 
     graded_df = pd.read_json('eval.json', lines=True)
 

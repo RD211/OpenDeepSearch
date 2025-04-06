@@ -2,6 +2,8 @@ from typing import List, Dict, Optional
 from loguru import logger
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
+import pprint
+
 
 def extract_information(organic_results: List[Dict]) -> List[str]:
     """Extract snippets from organic search results in a formatted string."""
@@ -60,6 +62,8 @@ def build_context(
     """
     try:
         # Build context from different components
+        print("Retrieved these results:")
+        pprint.pprint(sources_result, indent=2)
         organic_results = extract_information(sources_result.get('organic', []))
         top_stories = extract_top_stories(sources_result.get('topStories'))
         answer_box = extract_answer_box(

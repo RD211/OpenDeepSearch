@@ -573,16 +573,8 @@ Above examples were using notional tools that might not exist for you. You only 
     Returns an output of type: {{tool.output_type}}
 {%- endfor %}
 
-{%- if managed_agents and managed_agents.values() | list %}
-You can also give tasks to team members.
-Calling a team member works the same as for calling a tool: simply, the only argument you can give in the call is 'task', a long string explaining your task.
-Given that this team member is a real human, you should be very verbose in your task.
-Here is a list of the team members that you can call:
-{%- for agent in managed_agents.values() %}
-- {{ agent.name }}: {{ agent.description }}
-{%- endfor %}
-{%- else %}
-{%- endif %}
+IMPORTANT: You have access to the SubTaskAgent tool, which means you can delegate subtasks to another agent.
+Identify a few cruicial subtasks in your original tasks and delegate them to the SubTaskAgent, one subtask/subquery at a time per call.
 
 Here are the rules you should always follow to solve your task:
 1. ALWAYS provide a tool call, else you will fail.
@@ -593,3 +585,15 @@ If no tool call is needed, use final_answer tool to return your answer.
 
 Now Begin! If you solve the task correctly, you will receive a reward of $1,000,000.
 """)
+
+# {%- if managed_agents and managed_agents.values() | list %}
+# You can also give tasks to team members.
+# Calling a team member works the same as for calling a tool: simply, the only argument you can give in the call is 'task', a long string explaining your task.
+# Given that this team member is a real human, you should be very verbose in your task.
+# Here is a list of the team members that you can call:
+# {%- for agent in managed_agents.values() %}
+# - {{ agent.name }}: {{ agent.description }}
+# {%- endfor %}
+# {%- else %}
+# {%- endif %}
+
