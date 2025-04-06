@@ -18,24 +18,24 @@ init(autoreset=True)
 react_agent = None
 
 def initialize_react_agent():
-    """
-    Initialize and return a new instance of the react agent.
-    """
+
+    # Base model we will use for combining results.
     model = LiteLLMModel(
         "fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct",
         temperature=0.7
     )
 
+    # The actual search model tool.
     search_agent = OpenDeepSearchTool(
         model_name="fireworks_ai/accounts/fireworks/models/qwq-32b", 
         reranker="jina"
     )
     
-    react_agent = ToolCallingAgent(
-        tools=[search_agent],
-        model=model,
-        prompt_templates=REACT_PROMPT # Using REACT_PROMPT as system prompt
-    )
+    # react_agent = ToolCallingAgent(
+    #     tools=[search_agent],
+    #     model=model,
+    #     prompt_templates=REACT_PROMPT # Using REACT_PROMPT as system prompt
+    # )
 
     code_agent = CodeAgent(
         tools=[search_agent],
@@ -48,6 +48,7 @@ def initialize_react_agent():
         prompt_templates=MAJORITY_VOTE_PROMPT
     )
 
+    # Self consistent agent that combines multiple responses from the tool_agent using the judge_agent.
     sc_agent = SelfConsistentAgent(
         tool_agent=code_agent,
         judge_agent=judge_agent,
@@ -56,9 +57,6 @@ def initialize_react_agent():
     return sc_agent
 
 def process_prompt(example):
-    """
-    Use the global react agent to process each dataset example.
-    """
     react_agent = initialize_react_agent()
     print(Fore.YELLOW + f"[Worker] Processing prompt: {example['Prompt']}")
     try:
@@ -88,8 +86,11 @@ def main():
 
     print(Fore.CYAN + "Loading dataset 'google/frames-benchmark'...")
     ds = load_dataset('google/frames-benchmark', split='test')
-    # ds = ds.shuffle(seed=42).train_test_split(test_size=0.9)['train']
-    ds = ds.shuffle(seed=43).select(range(500, 600))#   # Select first 100 samples for testing
+
+
+
+    # We do batches of 100 problems in order to tackle rate limits on the api keys.
+    ds = ds.shuffle(seed=43).select(range(0, 100))
     from concurrent.futures import ThreadPoolExecutor
 
     print(Fore.CYAN + "Processing dataset with threadpool")
@@ -142,6 +143,5 @@ def main():
     print(f"Final accuracy:{A_percentage}%")
     
 if __name__ == '__main__':
-    # DO NOT set spawn — fork is default on Unix and needed here
-    multiprocessing.set_start_method('fork')  # optional, default on Linux
+    multiprocessing.set_start_method('fork')
     main()
