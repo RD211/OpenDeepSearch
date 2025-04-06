@@ -1,5 +1,0 @@
-Query: Which governor of Shizuoka resigned due to the delayed opening of the airport?
-Answers: ['Yoshinobu Ishikawa', 'Yoshinobu Ishikawa', 'Yoshinobu Ishikawa', 'Yoshinobu Ishikawa']
-Final Result: Yoshinobu Ishikawa
-
---------------------------------------------------
