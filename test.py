@@ -94,7 +94,7 @@ def main():
 
     print(Fore.CYAN + "Processing dataset with threadpool")
 
-    with ThreadPoolExecutor(max_workers=50) as executor:
+    with ThreadPoolExecutor(max_workers=100) as executor:
         # This will process the dataset in order using threads.
         processed_results = list(executor.map(process_prompt, ds))
 
