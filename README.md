@@ -3,6 +3,8 @@
 Contributors: **Severin Bratus**, **David Dinucu-Jianu**, **Ilias Mc Auliffe**
 # Our results are available in this repo in `full_eval.json`!
 
+# The write-up is in `Datathon_Writeup.pdf` and the presentation is in `AI_Agent_Self_Consistency_Presentation.pdf`.
+
 ![alt text](image.png)
 
 ---
